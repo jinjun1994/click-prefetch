@@ -2,9 +2,9 @@
   "name": "click-prefetch",
   "version": "1.0.1",
   "description": "click prefetch click-prefetch ",
-  "main": "index.js",
+  "main": "./dist/click-prefetch.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -14,5 +14,9 @@
     "prefetch click click-prefetch"
   ],
   "author": "jinjun",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
 }
