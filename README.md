@@ -38,6 +38,15 @@ window.addEventListener('load', () => {
   });
 ```
 
+## use script
+
+```js
+https://cdn.jsdelivr.net/npm/click-prefetch/dist/click-prefetch.js
+
+```
+
+
+
 ## Cheating the brain
 
 The humain brain perceives actions taking less than 100 ms as instant.  As a result, it makes your site feel instant even on 3G (assuming your pages are fast to render).
