@@ -6,13 +6,30 @@ Before a user clicks on a link, they hover their mouse over that link. When a us
 
 On mobile, a user starts touching their display before releasing it, leaving on average 90 ms to preload the page
 
+## example
+
+You can open <https://jinjun1994.github.io/Frontend-Knowledge-Base/> to see it.
+
 ## install
 
 ```bash
 npm i click-prefetch
 ```
 
-## use in vue
+## use in webpack
+
+```js
+ window.addEventListener('load', () => {
+    import(
+      /* webpackPrefetch: true */
+      /* webpackChunkName:"click-prefetch"*/ 
+    'click-prefetch').then(({default: func}) => {
+		func();
+	})
+  });
+```
+
+example  in vue
 
 ```js
  mounted () {
@@ -27,7 +44,11 @@ npm i click-prefetch
   }
 ```
 
+
+
 ## use in index.js
+
+es module
 
 ```js
 // index.js
@@ -38,11 +59,22 @@ window.addEventListener('load', () => {
   });
 ```
 
+```js
+var common = require('commonjs');
+```
+
+
+
 ## use script
 
 ```js
-https://cdn.jsdelivr.net/npm/click-prefetch/dist/click-prefetch.js
-
+<script src="https://cdn.jsdelivr.net/npm/click-prefetch/dist/click-prefetch.js">
+</script>
+<script>
+  window.addEventListener('load', () => {
+  clickPrefetch()
+  });
+</script>
 ```
 
 
