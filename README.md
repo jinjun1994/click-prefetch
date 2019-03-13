@@ -71,7 +71,7 @@ You can decide when to run
 ```js
 <script type="module">
 import clickPrefetch from 
-'https://cdn.jsdelivr.net/npm/click-prefetch@1.0.5/dist/umd.js';
+'https://cdn.jsdelivr.net/npm/click-prefetch';
   clickPrefetch()
 </script>
 ```
@@ -79,7 +79,7 @@ import clickPrefetch from
 or 
 
 ```js
-<script src="https://cdn.jsdelivr.net/npm/click-prefetch@1.0.5/dist/umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/click-prefetch"></script>
 
 <script>
 windows.click-prefetch.default()
