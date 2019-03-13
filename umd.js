@@ -6,7 +6,7 @@ module.exports = {
 	// externals: 'lodash',
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'umd.js',
+		filename: 'umd.min.js',
 		library: 'click-prefetch',
 		libraryTarget: 'umd'
 	}

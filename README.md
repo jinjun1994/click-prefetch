@@ -66,12 +66,14 @@ and more like AMD module
 
 ## use in script
 
-You can decide when to run
+You can decide when to run.
+
+you can change '1.0.8' to  latest version.
 
 ```js
 <script type="module">
 import clickPrefetch from 
-'https://cdn.jsdelivr.net/npm/click-prefetch';
+'https://cdn.jsdelivr.net/npm/click-prefetch@1.0.8';
   clickPrefetch()
 </script>
 ```
@@ -79,7 +81,7 @@ import clickPrefetch from
 or 
 
 ```js
-<script src="https://cdn.jsdelivr.net/npm/click-prefetch"></script>
+<script src="https://cdn.jsdelivr.net/npm/click-prefetch@1.0.8"></script>
 
 <script>
 windows.click-prefetch.default()
@@ -92,7 +94,7 @@ windows.click-prefetch.default()
 or use the clickPrefetch()  already running
 
 ```js
-<script src="https://cdn.jsdelivr.net/npm/click-prefetch/dist/es6-ran.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/click-prefetch@1.0.8/dist/es6-ran.js"></script>
 
 ```
 
