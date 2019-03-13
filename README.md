@@ -70,15 +70,29 @@ You can decide when to run
 
 ```js
 <script type="module">
-  import clickPrefetch from 'https://cdn.jsdelivr.net/npm/click-prefetch/src/index.js';
+import clickPrefetch from 
+'https://cdn.jsdelivr.net/npm/click-prefetch@1.0.5/dist/umd.js';
   clickPrefetch()
 </script>
 ```
 
+or 
+
+```js
+<script src="https://cdn.jsdelivr.net/npm/click-prefetch@1.0.5/dist/umd.js"></script>
+
+<script>
+windows.click-prefetch.default()
+</script>
+// 
+```
+
+
+
 or use the clickPrefetch()  already running
 
 ```js
-<script src="https://cdn.jsdelivr.net/npm/click-prefetch/dist/click-prefetch.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/click-prefetch/dist/es6-ran.js"></script>
 
 ```
 

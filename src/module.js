@@ -1,4 +1,4 @@
-/*! click-prefetch v1.0.5 - (C) 2019 jin jun -ran- https://github.com/jinjun1994/click-prefetch/blob/master/LICENSE */
+/*! click-prefetch v1.0.5 - (C) 2019 jin jun -umd- https://github.com/jinjun1994/click-prefetch/blob/master/LICENSE */
 
 let urlToPreload
 let mouseoverTimer
