@@ -1,6 +1,6 @@
 {
   "name": "click-prefetch",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "click prefetch click-prefetch ",
   "main": "./dist/click-prefetch.js",
   "scripts": {
