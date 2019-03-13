@@ -2,7 +2,7 @@
   "name": "click-prefetch",
   "version": "1.0.4",
   "description": "click prefetch click-prefetch ",
-  "main": "./dist/click-prefetch.js",
+  "main": "./dist/umd.js",
   "scripts": {
     "umd": "webpack --config umd.js",
     "ran": "webpack --config es6.ran.js "
