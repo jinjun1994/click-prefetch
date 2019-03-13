@@ -1,6 +1,6 @@
 {
   "name": "click-prefetch",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "click prefetch click-prefetch ",
   "main": "./dist/umd.js",
   "scripts": {
