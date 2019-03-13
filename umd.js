@@ -2,12 +2,12 @@ const path = require('path');
 
 module.exports = {
 	mode: 'production',
-	entry: './src/index.js',
+	entry: './src/module.js',
 	// externals: 'lodash',
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'click-prefetch.js',
-		library: 'root',
+		filename: 'umd.js',
+		library: 'click-prefetch',
 		libraryTarget: 'umd'
 	}
 }

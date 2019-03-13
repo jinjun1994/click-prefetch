@@ -2,7 +2,7 @@
 
 click-prefetch uses *just-in-time preloading* — it preloads a page right before a user clicks on it.
 
-Before a user clicks on a link, they hover their mouse over that link. When a user has hovered for 65 ms there is one chance out of two that they will click on that link, so instant.page starts preloading at this moment, leaving on average over 300 ms for the page to preload.
+Before a user clicks on a link, they hover their mouse over that link. When a user has hovered for 65 ms there is one chance out of two that they will click on that link, so click-prefetch starts preloading at this moment, leaving on average over 300 ms for the page to preload.
 
 On mobile, a user starts touching their display before releasing it, leaving on average 90 ms to preload the page
 
@@ -19,63 +19,70 @@ npm i click-prefetch
 ## use in webpack
 
 ```js
- window.addEventListener('load', () => {
     import(
       /* webpackPrefetch: true */
       /* webpackChunkName:"click-prefetch"*/ 
     'click-prefetch').then(({default: func}) => {
 		func();
 	})
-  });
 ```
 
 example  in vue
 
 ```js
  mounted () {
-  window.addEventListener('load', () => {
     import(
       /* webpackPrefetch: true */
       /* webpackChunkName:"click-prefetch"*/ 
     'click-prefetch').then(({default: func}) => {
 		func();
 	})
-  });
   }
 ```
 
+You can decide when to run the function
 
+## use in module
 
-## use in index.js
+You can use all kind of module syntax 
 
-es module
+es6 module
 
 ```js
-// index.js
+
 import  clickPrefetch from 'click-prefetch'
-
-window.addEventListener('load', () => {
   clickPrefetch()
-  });
+
 ```
+
+commonjs 
 
 ```js
-var common = require('commonjs');
+var clickPrefetch = require('click-prefetch');
+  clickPrefetch()
 ```
 
+and more like AMD module
 
+## use in script
 
-## use script
+You can decide when to run
 
 ```js
-<script src="https://cdn.jsdelivr.net/npm/click-prefetch/dist/click-prefetch.js">
-</script>
-<script>
-  window.addEventListener('load', () => {
+<script type="module">
+  import clickPrefetch from 'https://cdn.jsdelivr.net/npm/click-prefetch/src/index.js';
   clickPrefetch()
-  });
 </script>
 ```
+
+or use the clickPrefetch()  already running
+
+```js
+<script src="https://cdn.jsdelivr.net/npm/click-prefetch/dist/click-prefetch.js"></script>
+
+```
+
+
 
 
 

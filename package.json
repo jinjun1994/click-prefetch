@@ -4,7 +4,8 @@
   "description": "click prefetch click-prefetch ",
   "main": "./dist/click-prefetch.js",
   "scripts": {
-    "build": "webpack"
+    "umd": "webpack --config umd.js",
+    "ran": "webpack --config es6.ran.js "
   },
   "repository": {
     "type": "git",
